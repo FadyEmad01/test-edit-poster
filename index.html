@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="position-fixed w-100 z-3 animate-down headerNav">
+        <nav class="navbar navbar-expand-lg navbar-dark mt-4 mx-auto myMainNavebar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <svg class=" svgAnimate" width="30" height="30" viewBox="0 0 200 200" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_103_9)">
+                            <path
+                                d="M89.9318 6.12863C94.1569 -2.04288 105.843 -2.04288 110.068 6.12863L136.973 58.1644C138.051 60.2496 139.75 61.9486 141.836 63.0268L193.871 89.9318C202.043 94.1569 202.043 105.843 193.871 110.068L141.836 136.973C139.75 138.051 138.051 139.75 136.973 141.836L110.068 193.871C105.843 202.043 94.1569 202.043 89.9318 193.871L63.0268 141.836C61.9486 139.75 60.2496 138.051 58.1644 136.973L6.12863 110.068C-2.04288 105.843 -2.04288 94.1569 6.12863 89.9318L58.1644 63.0268C60.2496 61.9486 61.9486 60.2496 63.0268 58.1644L89.9318 6.12863Z"
+                                fill="url(#paint0_linear_103_9)" />
+                        </g>
+                        <defs>
+                            <linearGradient id="paint0_linear_103_9" x1="100" y1="0" x2="100" y2="200"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#DF99F7" />
+                                <stop offset="1" stop-color="#FFDBB0" />
+                            </linearGradient>
+                            <clipPath id="clip0_103_9">
+                                <rect width="200" height="200" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <button class="navbar-toggler focus-ring focus-ring-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="closeBtn ">
+                        <i class="fa-solid fa-equals" style="color: aliceblue;"></i>
+                        <i class="fa-solid fa-xmark d-none" style="color: aliceblue;"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-color" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-color" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-color" href="#">Dashbord</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-flex" role="search">
+                        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                        <a href="https://wa.me/201203289612" target="_blank"><button class="btn btn-blue"
+                                type="submit">Contact me</button></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <svg class="abs-top-right" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_104_171)">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M50 100C77.6142 100 100 77.6142 100 50C100 77.6142 122.386 100 150 100C122.386 100 100 122.386 100 150C100 122.386 77.6142 100 50 100ZM50 100C22.3858 100 0 122.386 0 150C0 177.614 22.3858 200 50 200C77.6142 200 100 177.614 100 150C100 177.614 122.386 200 150 200C177.614 200 200 177.614 200 150C200 122.386 177.614 100 150 100C177.614 100 200 77.6142 200 50C200 22.3858 177.614 0 150 0C122.386 0 100 22.3858 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100Z"
+                fill="url(#paint0_linear_104_171)" />
+        </g>
+        <defs>
+            <linearGradient id="paint0_linear_104_171" x1="14" y1="26" x2="179" y2="179.5"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#E9B8FF" />
+                <stop offset="1" stop-color="#F9ECFF" />
+            </linearGradient>
+            <clipPath id="clip0_104_171">
+                <rect width="200" height="200" fill="white" />
+            </clipPath>
+        </defs>
+    </svg>
+    <section id="hero">
+        <div class="container pb-5">
+            <div class="d-flex w-100" style="padding-top: 180px;">
+                <!-- <h1 class="text-color hero-font">An<span class="lighting"><i class="fa-solid fa-bolt-lightning"></i></span>mate</h1> -->
+                <h1 class="text-color hero-font" id="animateText">Animate</h1>
+            </div>
+            <div class="d-flex w-100 justify-content-end">
+                <h2 class="text-color hero-font">With F<span><svg class="svgRotation svgResponsive"
+                            viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M122.363 90.3495C117.674 95.9288 117.674 104.071 122.363 109.65L160.767 155.349C168.968 165.108 162.031 180 149.284 180H51.0288C38.2821 180 31.3446 165.108 39.5454 155.349L77.9499 109.65C82.6386 104.071 82.6386 95.9288 77.9498 90.3495L39.5453 44.6504C31.3446 34.8921 38.2821 20 51.0288 20L149.284 20C162.03 20 168.968 34.8921 160.767 44.6504L122.363 90.3495Z"
+                                fill="url(#paint0_linear_105_736)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_105_736" x1="149.557" y1="20" x2="39.7213"
+                                    y2="117.692" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B0B9FF" />
+                                    <stop offset="1" stop-color="#E7E9FF" />
+                                </linearGradient>
+                            </defs>
+                        </svg></span>dy</h2>
+            </div>
+        </div>
+    </section>
+    <div class="container pt-5">
+        <hr style="border: solid rgb(255, 244, 232) 1px;">
+    </div>
+
+
+    <!--  -->
+
+    <div class="wrapper">
+        <div class="container2 scrollx">
+
+            <section class="sec1 pin section">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-5 col-12">
+                            <span class="">About me</span>
+                            <h2 class=" fs-1 blockquote-footer my-2 color-gradiant">Fady Emad</h2>
+                            <p class="">Hello, I'm a CS student and junior web developer who loves crafting dynamic,
+                                intuitive websites.
+                                Skilled in HTML, CSS, JavaScript, and eager to learn new technologies, I'm committed to
+                                delivering high-quality projects that prioritize user experience and accessibility.</p>
+                        </div>
+                        <div class="col-lg-6 col-12 text-end anim">
+                            <img src="img/me.png" class="img-fluid" style="border-radius: 14px;" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="sec2 pin section">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-5 col-12">
+                            <span class="anim">The beginning</span>
+                            <h2 class="anim fs-1 blockquote-footer my-2 color-gradiant">The<span style="background-image: linear-gradient(to right, #caa2df, #d6b4e7, #e1c7ef, #edd9f6, #f8ecfe);
+                        -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent"> Star</span><br> that began to shine</h2>
+                            <p class="anim">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda beatae
+                                minus perspiciatis eum accusantium nesciunt eveniet vitae provident, velit unde harum
+                                iusto eaque voluptatum consequatur, aspernatur cumque dolor tempora! Mollitia!</p>
+                        </div>
+                        <div class="col-lg-6 col-12 text-center anim my-auto">
+                            <!-- <img src="img/me.png" class="img-fluid anim" style="border-radius: 14px;" alt=""> -->
+                            <svg width="300" height="300" viewBox="0 0 200 200" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_118_208)">
+                                    <path
+                                        d="M100 200C97.1048 105.262 94.738 102.91 0 100C94.738 97.1048 97.0903 94.738 100 0C102.895 94.738 105.262 97.0903 200 100C105.262 102.91 102.91 105.233 100 200Z"
+                                        fill="url(#paint0_linear_118_208)" />
+                                </g>
+                                <defs>
+                                    <linearGradient id="paint0_linear_118_208" x1="14" y1="26" x2="179" y2="179.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#E9B8FF" />
+                                        <stop offset="1" stop-color="#F9ECFF" />
+                                    </linearGradient>
+                                    <clipPath id="clip0_118_208">
+                                        <rect width="200" height="200" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec3 pin section">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-5 col-12">
+                            <span class="anim">The beginning</span>
+                            <h2 class="anim fs-1 blockquote-footer my-2 color-gradiant">The<span style="background-image: linear-gradient(to right, #caa2df, #d6b4e7, #e1c7ef, #edd9f6, #f8ecfe);
+                        -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent"> Hope</span></h2>
+                            <p class="anim">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis eius
+                                minus maiores nesciunt, est reprehenderit unde perferendis soluta nostrum doloribus
+                                magnam. Non numquam explicabo nostrum, vel sint error officiis minima!</p>
+                        </div>
+                        <div class="col-lg-6 col-12 text-center anim my-auto">
+                            <!-- <img src="img/me.png" class="img-fluid anim" style="border-radius: 14px;" alt=""> -->
+                            <img src="img/guitar_fady_.svg" class="img-fluid"
+                                style="border-radius: 14px; width: 300px; height: 300px;" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="container">
+        <ul class="nav nav-pills mb-3 justify-content-evenly py-2 px-2 mx-auto" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link  active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Skills</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Work</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <section id="bento">
+                <div class="container py-5">
+                    <h2 class="text-color text-center mb-4">{ Drag The Cards }</h2>
+                    <div class="row" id="draggable">
+                        <div class="col-lg-8 col-12">
+                            <div class="card  mb-3 mx-1 px-0 bento-card card1">
+                                <div class="card-body d-flex justify-content-between align-items-center">
+                                    <div class="col-4 d-flex flex-column justify-content-between py-2 h-100">
+                                        <div>
+                                            <figcaption class="blockquote-footer text-color my-0">
+                                                <cite title="Source Title">Developer</cite>
+                                            </figcaption>
+                                        </div>
+                                        <div>
+                                            <h5 class="card-title fs-3">Front-End</h5>
+                                            <p class="card-text">Some quick example text to build on the card</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <span>
+                                            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M99.9994 153.877C141.147 153.877 176.851 127.54 194.627 111.673C201.789 105.28 201.789 94.597 194.627 88.204C176.851 72.3371 141.147 46 99.9994 46C58.8516 46 23.1479 72.3371 5.37163 88.2041C-1.79055 94.597 -1.79054 105.28 5.37164 111.673C23.1479 127.54 58.8516 153.877 99.9994 153.877ZM99.9994 137.57C120.783 137.57 137.631 120.722 137.631 99.9383C137.631 79.1551 120.783 62.3069 99.9994 62.3069C79.2161 62.3069 62.368 79.1551 62.368 99.9383C62.368 120.722 79.2161 137.57 99.9994 137.57Z"
+                                                    fill="url(#paint0_linear_105_535)" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_105_535" x1="157.499" y1="63.2603"
+                                                        x2="106.827" y2="158.86" gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.0509862" stop-color="#FFB6E1" />
+                                                        <stop offset="1" stop-color="#FBE3EA" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card  mb-3 mx-1 px-0 bento-card card2">
+
+                                <div class="card-body d-flex flex-column justify-content-end">
+                                    <h5 class="card-title fs-3"><span style="background-image: linear-gradient(to right, #eb002f, #f50058, #ee008a, #cb00c4, #7215fd);
+                                      -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent">Angular</span> developer</h5>
+                                    <p class="card-text">Some quick example text to build on the card title </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card  mb-3 mx-1 px-0 bento-card card3">
+                                <div class="card-body d-flex flex-column justify-content-end">
+                                    <h5 class="card-title fs-3"><span style="background-image: linear-gradient(to right, #8b13fd, #8412fb, #7d11f9, #7611f7, #6f10f5); -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent">Bootstrap</span> developer</h5>
+                                    <p class="card-text">Some quick example text to build on the card title </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card  mb-3 mx-1 px-0 bento-card card4">
+                                <div class="card-body d-flex flex-column justify-content-end">
+                                    <h5 class="card-title fs-3"><span style="background-image: linear-gradient(to right , #ffc31d, #ff9638, #ff5f6d, #ff2eae, #fd44f3 , #54a1ff, #00d2ff, #00edff, #3afcc5 , #4380ff, #7b79ff, #ab6cff, #d759ff, #ff3af3); -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent">Spline</span> 3d</h5>
+                                    <p class="card-text">Some quick example text to build on the card title </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card  mb-3 mx-1 px-0 bento-card card5">
+                                <div class="card-body d-flex flex-column justify-content-end">
+                                    <h5 class="card-title fs-3"><span style="color: #8AC640;">Gsap</span> animation</h5>
+                                    <p class="card-text">Some quick example text to build on the card title </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card  mb-3 mx-1 px-0 bento-card">
+                                <div class="card-header">Header</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Secondary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-12">
+                            <div class="card  mb-3 mx-1 px-0 bento-card">
+                                <div class="card-header">Header</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Secondary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <section id="bento2">
+                <div class="container py-5">
+                    <h2 class="text-color text-center mb-4">{ Drag The Cards }</h2>
+                    <div class="row" id="draggable2">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card  mb-3 mx-1 px-0 bento-card card6">
+                                <div class="card-body d-flex flex-column justify-content-end">
+                                    <h5 class="card-title fs-3"><span>Assistant</span> instructor</h5>
+                                    <p class="card-text">Some quick example text to build on the card title </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card  mb-3 mx-1 px-0 bento-card card7">
+                                <div class="card-body d-flex flex-column justify-content-end">
+                                    <h5 class="card-title fs-3">Trainee at Loc-Camp</h5>
+                                    <p class="card-text">Some quick example text to build on the card title </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card  mb-3 mx-1 px-0 bento-card card8">
+                                <div class="card-body d-flex flex-column justify-content-end">
+                                    <h5 class="card-title fs-3">Freelance projects</h5>
+                                    <p class="card-text">Some quick example text to build on the card title </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card  mb-3 mx-1 px-0 bento-card">
+                                <div class="card-header">Header</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Secondary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-12">
+                            <div class="card  mb-3 mx-1 px-0 bento-card">
+                                <div class="card-header">Header</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Secondary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- <div class="container py-5 hrLine">
+        <hr style="border: solid rgb(255, 244, 232) 1px;">
+    </div> -->
+
+
+
+    <!-- editttttttttttttttttttt -->
+    <section class="edit my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="d-flex justify-content-center gap-5 fs-1 mb-3">
+                        <div><i class="fa-solid fa-display activeScreen" id="disktop" style="cursor: pointer;"></i>
+                        </div>
+                        <div><i class="fa-solid fa-mobile-screen-button unActiveScreen" style="cursor: pointer;"
+                                id="mobile"></i>
+                        </div>
+                        <div><i class="fa-solid fa-code unActiveScreen" id="code" style="cursor: pointer;"></i>
+                        </div>
+                    </div>
+                    <div class="color-disktop" id="color">
+                        <!-- navbar -->
+                        <nav class="navbar navbar-expand-sm " id="navPoster">
+                            <div class="contanerNav">
+                                <a class="navbar-brand text3" id="posterNavTitle" href="#">Poster Magazine</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Link</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link ">Disabled</a>
+                                        </li>
+                                    </ul>
+
+                                    <button class="MyBtn posterBtnJs">Poster</button>
+
+                                </div>
+                            </div>
+                        </nav>
+                        <!-- end navbar -->
+                        <!-- section1 -->
+                        <section class="section1 my-3">
+                            <div class="contaner">
+                                <div class="row">
+                                    <div class="sec1Img col-6 mb-3 pe-0">
+                                        <img src="img/Rivo _ ريفو _ Cairokee _ كايروكي.jpg"
+                                            onclick="openImage(this.src)" alt="">
+                                    </div>
+                                    <div
+                                        class="sec1Text col-6  d-flex flex-column justify-content-center align-items-center text-center">
+                                        <h1 class="text1 textH1Change">OFTEN IMITATED
+                                            NEVER DUPLICATED</h1>
+                                        <p class="my-3 text2">THE WORLD’S MOST AMAZING FACES ARE FOUND HERE.</p>
+                                        <audio class="myAudio">
+                                            <source
+                                                src="yt1s.com - على باب السيما تذكرتي قديمة                                حالاتواتس اميرعيد.mp3"
+                                                type="audio/mp3">
+
+                                        </audio>
+                                        <button class="MyBtn1 mt-0 posterBtnJs" onclick="playAudio(0)" type="button"
+                                            data-bs-toggle="tooltip" data-bs-placement="right"
+                                            data-bs-title="Play/Pause Song"
+                                            data-bs-custom-class="custom-tooltip">Poster</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end sextion1 -->
+                    </div>
+                    <div id="codeDiv" class="d-none">
+                         <pre class="lang-html hicode p-4"><code><span class="color-sympol"><</span><span class="color-tag">div</span> <span class="color-attretbute">class</span><span class="color-equal">=</span><span class="color-class">"container"</span><span class="color-sympol">></span><br>    <span class="color-sympol"><</span><span class="color-tag">div</span> <span class="color-attretbute">class</span><span class="color-equal">=</span><span class="color-class">"row"</span><span class="color-sympol">></span><br>        <span class="color-sympol"><</span><span class="color-tag">div</span> <span class="color-attretbute">class</span><span class="color-equal">=</span><span class="color-class">"sec1Img col-6 mb-3 pe-0"</span><span class="color-sympol">></span><br>            <span class="color-sympol"><</span><span class="color-tag">img</span> <span class="color-attretbute">src</span><span class="color-equal">=</span><span class="color-class">"img/Rivo _ ريفو _ Cairokee _ كايروكي.jpg"</span><span class="color-sympol">></span><br>        <span class="color-sympol"><</span><span class="color-sympol">/</span><span class="color-tag">div</span><span class="color-sympol">></span><br>        <span class="color-sympol"><</span><span class="color-tag">div</span> <span class="color-attretbute">class</span><span class="color-equal">=</span><span class="color-class">"sec1Text col-6  d-flex flex-column justify-content-center align-items-center text-center"</span><span class="color-sympol">></span><br>            <div class=" border-primary-subtle border-2 rounded d-inline borderCode"><span class="color-sympol"><</span><span class="color-tag">h1</span> <span class="color-attretbute">class</span><span class="color-equal">=</span><span class="color-class">"text1"</span><span class="color-sympol">></span><span class="textH1Change color-text">OFTEN IMITATED NEVER DUPLICATED</span><span class="color-sympol"><</span><span class="color-sympol">/</span></span><span class="color-tag">h1</span><span class="color-sympol">></span></span></div> <br>            <span class="color-sympol"><</span><span class="color-tag">p</span> <span class="color-attretbute">class</span><span class="color-equal">=</span><span class="color-class">"my-3 text2"</span><span class="color-sympol">></span><span class="color-text">THE WORLD’S MOST AMAZING FACES ARE FOUND HERE.<span class="color-sympol"><</span><span class="color-sympol">/</span></span><span class="color-tag">p</span><span class="color-sympol">></span><br>            <span class="color-sympol"><</span><span class="color-tag">audio</span> <span class="color-attretbute">class</span><span class="color-equal">=</span><span class="color-class">"myAudio"</span><span class="color-sympol">></span><br>                <span class="color-sympol"><</span><span class="color-tag">source</span> <span class="color-attretbute">src</span><span class="color-equal">=</span><span class="color-class">"***"</span> <span class="color-attretbute">type</span><span class="color-equal">=</span><span class="color-class">"audio/mp3"</span><span class="color-sympol">></span><br>            <span class="color-sympol"><</span><span class="color-sympol">/</span></span><span class="color-tag">audio</span><span class="color-sympol">></span><br>            <span class="color-sympol"><</span><span class="color-tag">button</span> <span class="color-attretbute">class</span><span class="color-equal">=</span><span class="color-class">"myBtn my-0"</span> <span class="color-attretbute">type</span><span class="color-equal">=</span><span class="color-class">"button"</span><br>                <span class="color-attretbute">data-bs-toggle</span><span class="color-equal">=</span><span class="color-class">"tooltip"</span> <span class="color-attretbute">data-bs-placement</span><span class="color-equal">=</span><span class="color-class">"right"</span><br>                <span class="color-attretbute">data-bs-custom-class</span><span class="color-equal">=</span><span class="color-class">"custom-tooltip"</span><br>                <div class="border-primary-subtle border-2 rounded d-inline borderCode"><span class="color-attretbute">data-bs-title</span><span class="color-equal">=</span><span class="color-class">"Play/Pause Song"</span><span class="color-sympol">></span><span class="posterBtnJs">Poster</span><span class="color-sympol"><</span><span class="color-sympol">/</span></span><span class="color-tag">button</span><span class="color-sympol">></span></div><br>        <span class="color-sympol"><</span><span class="color-sympol">/</span><span class="color-tag">div</span><span class="color-sympol">></span><br>    <span class="color-sympol"><</span><span class="color-sympol">/</span><span class="color-tag">div</span><span class="color-sympol">></span><br><span class="color-sympol"><</span><span class="color-sympol">/</span><span class="color-tag">div</span><span class="color-sympol">></span></code></pre>
+                    </div>
+
+
+                </div>
+                <div class="col-4">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">First</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Poster Magazine">
+                        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Button</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Poster">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleH1" class="form-label">h1</label>
+                        <input type="text" class="form-control" id="exampleH1"
+                            placeholder="OFTEN IMITATED NEVER DUPLICATED">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <pre class="lang-html hicode p-4"><code><span class="color-sympol"><</span><span class="color-tag">div</span> <span class="color-attretbute">class</span><span class="color-equal">=</span><span class="color-class">"container"</span><span class="color-sympol">></span><br>    <span class="color-sympol"><</span><span class="color-tag">div</span> <span class="color-attretbute">class</span><span class="color-equal">=</span><span class="color-class">"row"</span><span class="color-sympol">></span><br>        <span class="color-sympol"><</span><span class="color-tag">div</span> <span class="color-attretbute">class</span><span class="color-equal">=</span><span class="color-class">"sec1Img col-6 mb-3 pe-0"</span><span class="color-sympol">></span><br>            <span class="color-sympol"><</span><span class="color-tag">img</span> <span class="color-attretbute">src</span><span class="color-equal">=</span><span class="color-class">"img/Rivo _ ريفو _ Cairokee _ كايروكي.jpg"</span><span class="color-sympol">></span><br>        <span class="color-sympol"><</span><span class="color-sympol">/</span><span class="color-tag">div</span><span class="color-sympol">></span><br>        <span class="color-sympol"><</span><span class="color-tag">div</span> <span class="color-attretbute">class</span><span class="color-equal">=</span><span class="color-class">"sec1Text col-6  d-flex flex-column justify-content-center align-items-center text-center"</span><span class="color-sympol">></span><br>            <span class="color-sympol"><</span><span class="color-tag">h1</span> <span class="color-attretbute">class</span><span class="color-equal">=</span><span class="color-class">"text1"</span><span class="color-sympol">></span><span class="textH1Change color-text">OFTEN IMITATED NEVER DUPLICATED</span><span class="color-sympol"><</span><span class="color-sympol">/</span></span><span class="color-tag">h1</span><span class="color-sympol">></span><br>            <span class="color-sympol"><</span><span class="color-tag">p</span> <span class="color-attretbute">class</span><span class="color-equal">=</span><span class="color-class">"my-3 text2"</span><span class="color-sympol">></span><span class="color-text">THE WORLD’S MOST AMAZING FACES ARE FOUND HERE.<span class="color-sympol"><</span><span class="color-sympol">/</span></span><span class="color-tag">p</span><span class="color-sympol">></span><br>            <span class="color-sympol"><</span><span class="color-tag">audio</span> <span class="color-attretbute">class</span><span class="color-equal">=</span><span class="color-class">"myAudio"</span><span class="color-sympol">></span><br>                <span class="color-sympol"><</span><span class="color-tag">source</span> <span class="color-attretbute">src</span><span class="color-equal">=</span><span class="color-class">"***"</span> <span class="color-attretbute">type</span><span class="color-equal">=</span><span class="color-class">"audio/mp3"</span><span class="color-sympol">></span><br>            <span class="color-sympol"><</span><span class="color-sympol">/</span></span><span class="color-tag">audio</span><span class="color-sympol">></span><br>            <span class="color-sympol"><</span><span class="color-tag">button</span> <span class="color-attretbute">class</span><span class="color-equal">=</span><span class="color-class">"myBtn my-0"</span> <span class="color-attretbute">type</span><span class="color-equal">=</span><span class="color-class">"button"</span><br>                <span class="color-attretbute">data-bs-toggle</span><span class="color-equal">=</span><span class="color-class">"tooltip"</span> <span class="color-attretbute">data-bs-placement</span><span class="color-equal">=</span><span class="color-class">"right"</span><br>                <span class="color-attretbute">data-bs-custom-class</span><span class="color-equal">=</span><span class="color-class">"custom-tooltip"</span><br>                <span class="color-attretbute">data-bs-title</span><span class="color-equal">=</span><span class="color-class">"Play/Pause Song"</span><span class="color-sympol">></span><span class="posterBtnJs">Poster</span><span class="color-sympol"><</span><span class="color-sympol">/</span></span><span class="color-tag">button</span><span class="color-sympol">></span><br>        <span class="color-sympol"><</span><span class="color-sympol">/</span><span class="color-tag">div</span><span class="color-sympol">></span><br>    <span class="color-sympol"><</span><span class="color-sympol">/</span><span class="color-tag">div</span><span class="color-sympol">></span><br><span class="color-sympol"><</span><span class="color-sympol">/</span><span class="color-tag">div</span><span class="color-sympol">></span>
+                    </code>
+                    </pre>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <!-- end editttttttttttttttt -->
+
+
+
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- end gsap -->
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="vendor/jquery.fittext.js"></script>
+    <script>
+        $(".text1").fitText(0.8);
+        $(".text2").fitText(1.9);
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/Sortable.min.js"></script>
+    <script>
+        Sortable.create(draggable, {
+            sort: true,
+            easing: "cubic-bezier(1, 0, 0, 1)",
+            animation: 150,
+        });
+        Sortable.create(draggable2, {
+            sort: true,
+            easing: "cubic-bezier(1, 0, 0, 1)",
+            animation: 150,
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
